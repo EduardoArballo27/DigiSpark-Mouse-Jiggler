@@ -1,3 +1,3 @@
 # DigiSpark-Mouse-Jiggler
 
-Keeps computer from shutting off by moving mouse one pixel every minute
+Keeps computer from falling asleep from being idle by moving the mouse one pixel every minute.
