@@ -1,5 +1,3 @@
-//Makes mouse do a jiggle jiggle
-
 #include <DigiMouse.h>
 
 void setup() {
@@ -11,6 +9,13 @@ void loop() {
   DigiMouse.moveY(1); 
   DigiMouse.delay(50);
   DigiMouse.moveY(-1);
+  
+  //Blinks LED light for half a second
+  digitalWrite(1,LOW);
+  DigiKeyboard.delay(50);
+  digitalWrite(1,HIGH);
+  DigiKeyboard.delay(50);
+  digitalWrite(1,LOW);
   
   //Waits one minute before repeating
   DigiMouse.delay(60000);
